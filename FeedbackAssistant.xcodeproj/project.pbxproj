@@ -12,6 +12,7 @@
 		FAA1EB822B52ED38006DA262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA1EB812B52ED38006DA262 /* Assets.xcassets */; };
 		FAA1EB862B52ED38006DA262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA1EB852B52ED38006DA262 /* Preview Assets.xcassets */; };
 		FAEB02B12B52F2B8003F895E /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAEB02AF2B52F2B8003F895E /* Main.xcdatamodeld */; };
+		FAEB02B32B530B37003F895E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB02B22B530B37003F895E /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FAA1EB832B52ED38006DA262 /* FeedbackAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedbackAssistant.entitlements; sourceTree = "<group>"; };
 		FAA1EB852B52ED38006DA262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAEB02B02B52F2B8003F895E /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		FAEB02B22B530B37003F895E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				FAA1EB7D2B52ED37006DA262 /* FeedbackAssistantApp.swift */,
 				FAA1EB7F2B52ED37006DA262 /* ContentView.swift */,
+				FAEB02B22B530B37003F895E /* DataController.swift */,
 				FAEB02AF2B52F2B8003F895E /* Main.xcdatamodeld */,
 				FAA1EB812B52ED38006DA262 /* Assets.xcassets */,
 				FAA1EB832B52ED38006DA262 /* FeedbackAssistant.entitlements */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEB02B12B52F2B8003F895E /* Main.xcdatamodeld in Sources */,
+				FAEB02B32B530B37003F895E /* DataController.swift in Sources */,
 				FAA1EB802B52ED37006DA262 /* ContentView.swift in Sources */,
 				FAA1EB7E2B52ED37006DA262 /* FeedbackAssistantApp.swift in Sources */,
 			);
