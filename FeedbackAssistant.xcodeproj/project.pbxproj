@@ -13,6 +13,8 @@
 		FAA1EB862B52ED38006DA262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA1EB852B52ED38006DA262 /* Preview Assets.xcassets */; };
 		FAEB02B12B52F2B8003F895E /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAEB02AF2B52F2B8003F895E /* Main.xcdatamodeld */; };
 		FAEB02B32B530B37003F895E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB02B22B530B37003F895E /* DataController.swift */; };
+		FAFB913E2B532BD00000C710 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB913D2B532BD00000C710 /* SidebarView.swift */; };
+		FAFB91402B532BE80000C710 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB913F2B532BE80000C710 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		FAEB02B02B52F2B8003F895E /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		FAEB02B22B530B37003F895E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		FAFB913C2B53281E0000C710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAFB913D2B532BD00000C710 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		FAFB913F2B532BE80000C710 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,10 @@
 			children = (
 				FAFB913C2B53281E0000C710 /* Info.plist */,
 				FAA1EB7D2B52ED37006DA262 /* FeedbackAssistantApp.swift */,
-				FAA1EB7F2B52ED37006DA262 /* ContentView.swift */,
 				FAEB02B22B530B37003F895E /* DataController.swift */,
+				FAFB913D2B532BD00000C710 /* SidebarView.swift */,
+				FAA1EB7F2B52ED37006DA262 /* ContentView.swift */,
+				FAFB913F2B532BE80000C710 /* DetailView.swift */,
 				FAEB02AF2B52F2B8003F895E /* Main.xcdatamodeld */,
 				FAA1EB812B52ED38006DA262 /* Assets.xcassets */,
 				FAA1EB832B52ED38006DA262 /* FeedbackAssistant.entitlements */,
@@ -148,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEB02B12B52F2B8003F895E /* Main.xcdatamodeld in Sources */,
+				FAFB91402B532BE80000C710 /* DetailView.swift in Sources */,
 				FAEB02B32B530B37003F895E /* DataController.swift in Sources */,
+				FAFB913E2B532BD00000C710 /* SidebarView.swift in Sources */,
 				FAA1EB802B52ED37006DA262 /* ContentView.swift in Sources */,
 				FAA1EB7E2B52ED37006DA262 /* FeedbackAssistantApp.swift in Sources */,
 			);
