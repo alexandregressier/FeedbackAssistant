@@ -11,6 +11,7 @@
 		FAA1EB802B52ED37006DA262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1EB7F2B52ED37006DA262 /* ContentView.swift */; };
 		FAA1EB822B52ED38006DA262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA1EB812B52ED38006DA262 /* Assets.xcassets */; };
 		FAA1EB862B52ED38006DA262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA1EB852B52ED38006DA262 /* Preview Assets.xcassets */; };
+		FAEB02B12B52F2B8003F895E /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAEB02AF2B52F2B8003F895E /* Main.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FAA1EB812B52ED38006DA262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA1EB832B52ED38006DA262 /* FeedbackAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedbackAssistant.entitlements; sourceTree = "<group>"; };
 		FAA1EB852B52ED38006DA262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAEB02B02B52F2B8003F895E /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				FAA1EB7D2B52ED37006DA262 /* FeedbackAssistantApp.swift */,
 				FAA1EB7F2B52ED37006DA262 /* ContentView.swift */,
+				FAEB02AF2B52F2B8003F895E /* Main.xcdatamodeld */,
 				FAA1EB812B52ED38006DA262 /* Assets.xcassets */,
 				FAA1EB832B52ED38006DA262 /* FeedbackAssistant.entitlements */,
 				FAA1EB842B52ED38006DA262 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEB02B12B52F2B8003F895E /* Main.xcdatamodeld in Sources */,
 				FAA1EB802B52ED37006DA262 /* ContentView.swift in Sources */,
 				FAA1EB7E2B52ED37006DA262 /* FeedbackAssistantApp.swift in Sources */,
 			);
@@ -359,6 +363,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAEB02AF2B52F2B8003F895E /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAEB02B02B52F2B8003F895E /* Main.xcdatamodel */,
+			);
+			currentVersion = FAEB02B02B52F2B8003F895E /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FAA1EB722B52ED37006DA262 /* Project object */;
 }
