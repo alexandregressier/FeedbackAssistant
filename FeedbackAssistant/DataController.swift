@@ -54,5 +54,25 @@ class DataController: ObservableObject {
         objectWillChange.send()
         container.viewContext.delete(object)
         save()
-    }    
+    }
+    
+    private func delete(_ fetchRequest: NSFetchRequest<NSFetchRequestResult>) {
+        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        batchDeleteRequest.resultType = .resultTypeObjectIDs // Tell me what you deleted, give me back the object identifiers
+        
+        if let delete = try? container.viewContext.execute(batchDeleteRequest) as? NSBatchDeleteResult { // Execute takes any kind of request, so a cast is needed
+            let changes = [NSDeletedObjectsKey: delete.result as? [NSManagedObject] ?? []] // .result = Any?, those are object IDs ; NSDeletedObjectsKey = a constant string
+            NSManagedObjectContext.mergeChanges(fromRemoteContextSave: changes, into: [container.viewContext])
+        }
+    }
+    
+    func deleteAll() {
+        let request1: NSFetchRequest<NSFetchRequestResult> = Tag.fetchRequest()
+        delete(request1)
+        
+        let request2: NSFetchRequest<NSFetchRequestResult> = Issue.fetchRequest()
+        delete(request2)
+        
+        save()
+    }
 }
