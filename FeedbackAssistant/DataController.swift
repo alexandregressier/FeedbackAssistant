@@ -2,6 +2,13 @@ import CoreData
 
 class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
+    
+    static var preview: DataController = {
+        let dataController = DataController(inMemory: true)
+        dataController.createSampleData()
+        
+        return dataController
+    }()
  
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
@@ -36,4 +43,16 @@ class DataController: ObservableObject {
         }
         try? viewContext.save()
     }
+    
+    func save() {
+        if container.viewContext.hasChanges {
+            try? container.viewContext.save()
+        }
+    }
+    
+    func delete(_ object: NSManagedObject) {
+        objectWillChange.send()
+        container.viewContext.delete(object)
+        save()
+    }    
 }
