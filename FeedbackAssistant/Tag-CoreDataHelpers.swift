@@ -10,7 +10,7 @@ extension Tag {
     var tagActiveIssues: [Issue] {
         let result = issues?.allObjects as? [Issue] ?? []
         
-        return result.filter { $0.completed == false }
+        return result.filter { !$0.completed }
     }
     static var example: Tag {
         let controller = DataController(inMemory: true)
