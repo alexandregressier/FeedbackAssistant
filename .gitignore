@@ -1,3 +1,6 @@
 # JetBrains IDEs
 .idea/
 
+# Xcode User Data
+xcuserdata/
+
