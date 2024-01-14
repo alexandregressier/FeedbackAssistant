@@ -10,8 +10,8 @@ struct SidebarView: View {
     var tagFilters: [Filter] {
         tags.map {
             Filter(
-                id: $0.id ?? UUID(),
-                name: $0.name ?? "Unnamed",
+                id: $0.tagID,
+                name: $0.tagName,
                 icon: "tag",
                 tag: $0
             )
