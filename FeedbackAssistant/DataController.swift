@@ -63,7 +63,7 @@ class DataController: ObservableObject {
         batchDeleteRequest.resultType = .resultTypeObjectIDs // Tell me what you deleted, give me back the object identifiers
         
         if let delete = try? container.viewContext.execute(batchDeleteRequest) as? NSBatchDeleteResult { // Execute takes any kind of request, so a cast is needed
-            let changes = [NSDeletedObjectsKey: delete.result as? [NSManagedObject] ?? []] // .result = Any?, those are object IDs ; NSDeletedObjectsKey = a constant string
+            let changes = [NSDeletedObjectsKey: delete.result as? [NSManagedObjectID] ?? []] // .result = Any?, those are object IDs ; NSDeletedObjectsKey = a constant string
             NSManagedObjectContext.mergeChanges(fromRemoteContextSave: changes, into: [container.viewContext])
         }
     }
