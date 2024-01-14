@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA7103062B548DCB00E976D3 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7103052B548DCB00E976D3 /* Issue-CoreDataHelpers.swift */; };
 		FAA1EB7E2B52ED37006DA262 /* FeedbackAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1EB7D2B52ED37006DA262 /* FeedbackAssistantApp.swift */; };
 		FAA1EB802B52ED37006DA262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1EB7F2B52ED37006DA262 /* ContentView.swift */; };
 		FAA1EB822B52ED38006DA262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA1EB812B52ED38006DA262 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA7103052B548DCB00E976D3 /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		FAA1EB7A2B52ED37006DA262 /* FeedbackAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA1EB7D2B52ED37006DA262 /* FeedbackAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAssistantApp.swift; sourceTree = "<group>"; };
 		FAA1EB7F2B52ED37006DA262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				FAFB913D2B532BD00000C710 /* SidebarView.swift */,
 				FAA1EB7F2B52ED37006DA262 /* ContentView.swift */,
 				FAFB913F2B532BE80000C710 /* DetailView.swift */,
+				FA7103052B548DCB00E976D3 /* Issue-CoreDataHelpers.swift */,
 				FAEB02AF2B52F2B8003F895E /* Main.xcdatamodeld */,
 				FAA1EB812B52ED38006DA262 /* Assets.xcassets */,
 				FAA1EB832B52ED38006DA262 /* FeedbackAssistant.entitlements */,
@@ -158,6 +161,7 @@
 			files = (
 				FAFB91422B532ED20000C710 /* Filter.swift in Sources */,
 				FAEB02B12B52F2B8003F895E /* Main.xcdatamodeld in Sources */,
+				FA7103062B548DCB00E976D3 /* Issue-CoreDataHelpers.swift in Sources */,
 				FAFB91402B532BE80000C710 /* DetailView.swift in Sources */,
 				FAEB02B32B530B37003F895E /* DataController.swift in Sources */,
 				FAFB913E2B532BD00000C710 /* SidebarView.swift in Sources */,
