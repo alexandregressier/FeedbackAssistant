@@ -11,6 +11,7 @@ struct ContentView: View {
             allIssues = tag.issues?.allObjects as? [Issue] ?? []
         } else {
             let request = Issue.fetchRequest()
+            request.predicate = NSPredicate(format: "modificationDate > %@", filter.minModificationDate as NSDate)
             allIssues = (try? dataController.container.viewContext.fetch(request)) ?? []
         }
         return allIssues.sorted()
