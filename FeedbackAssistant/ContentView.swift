@@ -18,7 +18,12 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Text("Content")
+        List {
+            ForEach(issues) { issue in
+                Text(issue.issueTitle)
+            }
+        }
+        .navigationTitle("Issues")
     }
 }
 
